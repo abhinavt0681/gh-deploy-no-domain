@@ -1,0 +1,35 @@
+services:
+  backend:
+    build: ./backend
+    container_name: grace_harbor_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://graceharbor:GraceHarbor2025!!@gh-housing.c5cg280s45ed.us-east-2.rds.amazonaws.com:5432/property
+      - SECRET_KEY=your_secret_key_here
+    networks:
+      - grace_harbor_network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - API_URL=http://3.147.77.205:8000
+        - NEXT_PUBLIC_API_URL=http://3.147.77.205:8000
+    container_name: grace_harbor_frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - API_URL=http://3.147.77.205:8000
+      - NEXT_PUBLIC_API_URL=http://3.147.77.205:8000
+    depends_on:
+      - backend
+    networks:
+      - grace_harbor_network
+
+networks:
+  grace_harbor_network:
+    driver: bridge 

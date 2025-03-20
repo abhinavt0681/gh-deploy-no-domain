@@ -1,0 +1,161 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boston",
+        "id": "boston",
+        "density": "high"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0589, 42.3601]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cambridge",
+        "id": "cambridge",
+        "density": "high"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1097, 42.3736]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Worcester",
+        "id": "worcester",
+        "density": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.8023, 42.2626]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Springfield",
+        "id": "springfield",
+        "density": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.5894, 42.1015]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lowell",
+        "id": "lowell",
+        "density": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.3145, 42.6334]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Bedford",
+        "id": "new_bedford",
+        "density": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-70.9342, 41.6362]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brockton",
+        "id": "brockton",
+        "density": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0183, 42.0834]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quincy",
+        "id": "quincy",
+        "density": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0023, 42.2529]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lynn",
+        "id": "lynn",
+        "density": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-70.9495, 42.4668]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Newton",
+        "id": "newton",
+        "density": "high"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.2092, 42.3370]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brookline",
+        "id": "brookline",
+        "density": "high"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1211, 42.3317]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Plymouth",
+        "id": "plymouth",
+        "density": "low"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-70.6673, 41.9584]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cape Cod",
+        "id": "cape_cod",
+        "density": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-70.2962, 41.6688]
+      }
+    }
+  ]
+} 

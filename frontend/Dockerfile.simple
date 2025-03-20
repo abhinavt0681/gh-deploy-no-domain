@@ -1,0 +1,36 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Accept build arguments
+ARG API_URL=http://localhost:8000
+ARG NEXT_PUBLIC_API_URL=http://localhost:8000
+
+# Set environment variables for build time
+ENV API_URL=$API_URL
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+
+# Copy package files
+COPY package.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Create public directory if it doesn't exist
+RUN mkdir -p public
+
+# Build with environment variables
+RUN NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL API_URL=$API_URL npm run build
+
+# Set runtime environment variables
+ENV NODE_ENV production
+ENV PORT 3000
+ENV NEXT_TELEMETRY_DISABLED 1
+
+EXPOSE 3000
+
+# Start the Next.js application
+CMD ["npm", "start"] 
