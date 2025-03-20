@@ -17,8 +17,9 @@ class Settings(BaseSettings):
     
     # CORS settings
     ALLOWED_ORIGINS: List[str] = [
-        "http://localhost:3000",   # Local development frontend
-        "http://3.147.77.205:3000", # Production frontend
+        "http://localhost:3000",     # Local development frontend
+        "http://3.147.77.205:3000",  # Old production frontend
+        "http://3.147.48.113:3000",  # Current production frontend
     ]
     
     # JWT settings

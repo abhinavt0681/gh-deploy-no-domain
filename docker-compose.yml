@@ -14,7 +14,7 @@ services:
   frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.simple
       args:
         - API_URL=http://3.147.48.113:8000
         - NEXT_PUBLIC_API_URL=http://3.147.48.113:8000
