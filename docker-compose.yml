@@ -16,15 +16,15 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
       args:
-        - API_URL=http://3.147.77.205:8000
-        - NEXT_PUBLIC_API_URL=http://3.147.77.205:8000
+        - API_URL=http://3.147.48.113:8000
+        - NEXT_PUBLIC_API_URL=http://3.147.48.113:8000
     container_name: grace_harbor_frontend
     restart: always
     ports:
       - "3000:3000"
     environment:
-      - API_URL=http://3.147.77.205:8000
-      - NEXT_PUBLIC_API_URL=http://3.147.77.205:8000
+      - API_URL=http://3.147.48.113:8000
+      - NEXT_PUBLIC_API_URL=http://3.147.48.113:8000
     depends_on:
       - backend
     networks:
